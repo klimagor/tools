@@ -53,7 +53,7 @@ spec:
   selector:
     app: {{ $.name }}
 {{- if $.V.expose }}
-  type: LoadBalancer
+  type: NodePort
 {{- end }}
 ---
 {{- if $.V.inject }}
